@@ -1,0 +1,14 @@
+.typing-text{
+  height: 170px;
+  letter-spacing: 2px;
+ line-height: 1.8;
+}
+.blinking-cursor{
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }

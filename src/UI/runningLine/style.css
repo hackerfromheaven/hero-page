@@ -1,0 +1,45 @@
+
+.marquee {
+    width: 100vw; 
+    white-space: nowrap;
+    display: flex; 
+    padding: 20px 0px;
+    overflow: hidden;
+    margin-top: 10%;
+    background-color: yellow;
+  }
+  
+  .marquee-content {
+    width: 200%;
+    padding: 0;
+    display: flex;
+    animation: 25s marquee linear infinite; 
+  }
+  .marquee:hover .marquee-content{
+animation-play-state: paused;
+  }
+  .marquee-item {
+    font-size: 1.8rem;
+    margin: 0 90px;
+    font-weight: 700;
+    list-style-type: none;
+    color: black;
+    position: relative;
+  }
+  .marquee-item::before {
+    content: '•'; 
+    font-size: 100px; 
+    color: black; 
+    position: absolute;
+    left: -110px;
+    top: -55px;
+}
+  @keyframes marquee {
+from {
+  transform: translateX(0);
+}
+to{
+transform: translateX(-100%) ;
+}
+  }
+  

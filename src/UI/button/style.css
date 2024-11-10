@@ -1,0 +1,55 @@
+.button-go{
+    border: 1px solid aliceblue;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 60px;
+    padding: 15px 80px 15px 20px;
+    position: relative;
+}
+.button-go::after{
+    content: "";
+width: 35px;
+height: 2px;
+background-color: aliceblue;
+display: block;
+position: absolute;
+top: 50%;
+animation: left-to-right 1.8s ease-in-out infinite alternate;
+}
+.button-go::before{
+    content: "";
+width: 13px;
+height: 13px;
+border-top: 2px solid aliceblue;
+border-right: 2px solid aliceblue;
+display: block;
+position: absolute;
+top: 38%;
+transform: rotate(45deg);
+animation: left-to-right2x 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes left-to-right {
+    0% {
+        right: 31px;
+    }
+    50% {
+        right: 25px;
+    }
+    100% {
+        right: 31px;
+    }
+}
+@keyframes left-to-right2x {
+    0% {
+        right: 32px;
+    }
+    50% {
+        right: 26px;
+    }
+    100% {
+        right: 32px;
+    }
+}
+

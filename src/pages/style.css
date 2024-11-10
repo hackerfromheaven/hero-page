@@ -1,0 +1,23 @@
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text-container{
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 70px;
+    margin-right: auto;
+    width: 60% ;
+}
+.text-container h1, h2 {
+    width: fit-content;
+}
+.text-container h1 {
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.text-container h2 {
+    width: fit-content;
+    margin-bottom: 30px;
+}
